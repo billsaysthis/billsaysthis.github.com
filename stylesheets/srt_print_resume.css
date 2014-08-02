@@ -1,0 +1,10 @@
+#inner { padding: 0px 30px; margin: 0px auto; background: #fff; border: none;}
+#hd { margin: 0; border-bottom: none;}
+#bd .yui-t7 #yui-main .yui-b {margin-bottom: 0px;}
+a#emailer { display: block; float: left; background: #fff; color: #000; padding: 6px 12px 6px 12px; margin-bottom: 6px; text-decoration: none; border: 1px solid #000;}
+h1, h2, h3, h4 { color: #000; }
+.yui-gf { margin-bottom: 1.4em; border-bottom: none; }
+#education {margin-bottom: 0px;}
+#education .job {margin-bottom: 0px;}
+#ft {display: none;}
+.print-only {display: block;}
