@@ -1,4 +1,4 @@
 billsaysthis.github.com
 =======================
 
-My user page
+<a href="http://billlazar.com">My Resume</a>
