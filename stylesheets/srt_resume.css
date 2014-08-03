@@ -23,8 +23,8 @@ body { font-family: Georgia; color: #444; }
 
 /* //-- header, body, footer -- */
 #hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #bfd2e1 }
-#hd .yui-gc div.first {width: 46%;}
-#hd .yui-u {width: 52%;}
+#hd .yui-gc div.first {width: 55%;}
+#hd .yui-u {width: 43%;}
 #hd h2 { text-transform: uppercase; letter-spacing: 2px; }
 #ft { margin-bottom: 2em; }
 
