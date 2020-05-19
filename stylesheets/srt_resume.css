@@ -13,37 +13,6 @@
 #menu {
   background: #666;
 }
-#navMenuCtr {
-  width: 100%;
-  border: solid #003366;
-  border-width: 1px 0;
-}
-#navMenu {
-  list-style-type: none;
-}
-#navMenu li {
-  list-style-type: none;
-  display: inline-block;
-  float: left;
-  width: auto;
-  margin-left: 0;
-  text-align: center;
-  border-right: 1px solid #e0e0e0;
-}
-#navMenu li:hover {
-  background-color: #222;
-}
-#navMenu li:first-child {
-  /*  border-left: 1px solid #e0e0e0;*/
-  /*  margin-left: 10px;*/
-}
-#navMenu li a {
-  color: #fff;
-  text-decoration: none;
-  font-variant: small-caps;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 .msg {
   padding: 10px;
   background: #222;
@@ -95,20 +64,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-#ft {
-  margin-bottom: 2em;
-}
-
-/* //-- footer -- */
-#ft {
-  padding: 1em 0;
-  font-size: 92%;
-  border-top: 1px solid #bfd2e1;
-  text-align: center;
-}
-#ft p {
-  margin-bottom: 0;
-  text-align: center;
+#profile {
+  margin-top: 2em;
 }
 
 /* //-- core typography and style -- */
@@ -165,6 +122,9 @@ p.enlarge {
 p.enlarge span {
   color: #000;
 }
+.printOnly {
+  display: none;
+}
 .contact-info {
   margin-top: 7px;
 }
@@ -183,7 +143,7 @@ p.enlarge span {
 
 /* //-- section styles -- */
 
-a#emailer {
+a.emailer {
   display: block;
   float: left;
   background: #666;
@@ -192,7 +152,7 @@ a#emailer {
   margin-bottom: 6px;
   text-decoration: none;
 }
-a#emailer:hover {
+a.emailer:hover {
   background: #222;
 }
 

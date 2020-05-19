@@ -9,18 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/reset-fonts-grids.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/srt_resume.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/srt_print_resume.css" media="print" />
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript">
-		<!--
-		function changeRef() {
-			var m, nm1, nm2;
-			m = 'mail';
-			nm1 = 'blaz';
-			nm2 = 'com';
-			window.location = m+'to:'+nm1+'ar@g'+m+'.'+nm2+'?subject=Resume Contact';
-		}
-		//-->
-		</script>
 	</head>
 	<body>
 		<div id="doc2" class="yui-t7">
@@ -29,13 +17,17 @@
 					<div class="yui-gc">
 						<div class="yui-u first">
 							<h1>William Lazar</h1>
-							<h2 class="minor">Software Development Professional</h2>
+							<h2 class="minor displayOnly">Software Development Professional</h2>
 						</div>
 
 						<div class="yui-u" id="contact">
 							<div class="contact-info">
-								<h3><img src="images/profile-pic.jpg" alt="William's picture" class="minor"></h3>
-								<h3><a href="mailto:blazar+resume@gmail.com" id="emailer">blazar+resume@gmail.com</a></h3>
+								<h3 class="displayOnly"><img src="images/profile-pic.jpg" alt="William's picture" class="minor"></h3>
+								<h3 class="displayOnly"><a href="mailto:blazar+resume@gmail.com" class="emailer">Email</a></h3>
+								<h3 class="displayOnly"><a href="https://www.linkedin.com/in/billlazar/" class="emailer">LinkedIn</a></h3>
+								<h3 class="printOnly">blazar+resume@gmail.com</h3>
+								<h3 class="printOnly">650-520-8946</h3>
+								<h3 class="printOnly last">https://www.linkedin.com/in/billlazar/</h3>
 							</div><!--// .contact-info -->
 						</div>
 					</div><!--// .yui-gc -->
@@ -44,16 +36,6 @@
 				<div id="bd">
 					<div id="yui-main">
 						<div class="yui-b">
-            			  	<div class="yui-gf" id="menu">
-								<div class="yui-u" id="navMenuCtr">
-									<ul id="navMenu">
-										<li id="experienceMenu"><a href="#experience">Professional Experience</a></li>
-										<li id="communityMenu"><a href="#service">Community Service</a></li>
-										<li id="educationMenu"><a href="#education">Education</a></li>
-									</ul>
-								</div>
-							</div>
-
 							<div class="yui-gf" id="profile">
 								<div class="yui-u first"><h2>Profile</h2></div>
 								<div class="yui-u">
@@ -66,21 +48,28 @@
 							<div class="yui-gf minor" id="skills">
 								<div class="yui-u first"><h2>Skills</h2></div>
 								<div class="yui-u">
-									<div class="skills">
-										<h2>Software Development</h2>
+									<div class="skills printOnlyBottom">
+										<h3>Software Development</h3>
 										<p>Develop engaging web-based applications in independent and team setups using JavaScript, Typescript, and Rails.</p>
 									</div>
 
-									<div class="skills">
-										<h2>Product Management</h2>
+									<div class="skills printOnlyBottom">
+										<h3>Product Management</h3>
 										<p>Deliver business requirements-driven software releases on schedule and on budget.</p>
+									</div>
+
+									<div class="skills printOnly">
+										<h3>Open Source</h3>
+										<p>Sumo Logic JavaScript SDK for Logging</p>
+										<p>https://github.com/SumoLogic/js-sumo-logger</p>
+										<p>A JavaScript SDK for Node and browser that simplifies using a Sumo Logic HTTP Source.</p>
 									</div>
 								</div>
 							</div><!--// .yui-gf -->
 
 							<div class="yui-gf" id="expertise">
 								<div class="yui-u first"><h2>Technical Expertise</h2></div>
-								<div class="yui-u">
+								<div class="yui-u displayOnly">
 									<ul class="talent">
 										<li>Javascript, Typescript</li>
 										<li>React, AngularJS</li>
@@ -88,14 +77,17 @@
 									</ul>
 
 									<ul class="talent">
+										<li>Redux, MaterialUI</li>
 										<li>Cypress, Jasmine, Jest</li>
-										<li>Git</li>
-										<li class="last">Jira</li>
+										<li class="last">Git, Jira</li>
 									</ul>
+								</div>
+								<div class="yui-u printOnly">
+									<p>JavaScript, Typescript, React, AngularJS, Sass/CSS, HTML, Redux, MaterialUI, Cypress, Jasmine, Jest, Git, Jira</p>
 								</div>
 							</div><!--// .yui-gf-->
 
-							<div class="yui-gf" id="opensource">
+							<div class="yui-gf displayOnly" id="opensource">
 								<div class="yui-u first"><h2>Open Source</h2></div>
 								<div class="yui-u">
 									<div class="job">
@@ -113,7 +105,7 @@
 									<div class="job">
 										<h2><a href="http://www.sumologic.com">Sumo Logic</a></h2>
 										<h3>Sr. Software Engineer</h3>
-										<h4>2013-2020</h4>
+										<h4>Redwood City, CA (remote), 2013-2020</h4>
 										<ul>
 											<li>JavaScript and view layer application development of an enterprise, web-scale cloud log management solution</li>
 											<li>Wrote the open source <a href="https://github.com/SumoLogic/js-logging-sdk">Sumo Logic JavaScript Logging SDK</a></li>
@@ -125,7 +117,7 @@
 									<div class="job">
 										<h2>Zuberance</h2>
 										<h3>Front End Developer</h3>
-										<h4>2011-2013</h4>
+										<h4>San Carlos, CA, 2011-2013</h4>
 										<ul>
 											<li>JavaScript and view layer application development for a suite of brand advocate-focused marketing automation applications used by major brand advertisers</li>
 											<li>Key technologies: Backbone.js, jQuery, Grails, Compass/Sass </li>
@@ -137,10 +129,10 @@
 									<div class="job">
 										<h2>Glam Media, Inc.</h2>
 										<h3>Software Developer</h3>
-										<h4>2010-2011</h4>
+										<h4>Brisbane, CA, 2010-2011</h4>
 										<ul>
 											<li>Ruby on Rails application development, focused on the GlamAdapt Automate self-service ad purchasing system, also used by CBS Interactive, TimeDigital and Linden Labs</li>
-											<li>Seven engineer virtual team uses Git, GitHub, LightHouse and Skype to drive monthly sprints</li>
+											<li>Used Git, GitHub, LightHouse and Skype to drive monthly sprints</li>
 											<li>Wrote a custom Rails plugin, heavy on jQuery, to manage parent/child dynamic connected select boxes</li>
 											<li>Developed a geotargeting widget, mix of a Rails helper and jQuery, with specific appearance and behavior tailored to approximately 10 different uses in the app</li>
 											<li>Drove Rails, gem and plugin update process</li>
@@ -149,9 +141,9 @@
 
 									<div class="job">
 										<h2>Kachingle, Inc.</h2>
+										<h4>2009-2010, Palo Alto, CA</h4>
 										<h3>Web Developer</h3>
-										<h4>2009-2010</h4>
-										<ul>
+										<ul class="printOnlyBottom">
 											<li>Wrote substantially all of the Kachingle Ruby on Rails application for beta launch of the service using Rails with MySQL</li>
 											<li>Developed the Kachingle Medallion WordPress plugin</li>
 											<li>Implemented and prototyped new site features in PHP and JavaScript</li>
@@ -163,14 +155,13 @@
 											<li>Managed the Kachingle Online Community using AdobeConnect Pro for monthly webinars, MailChimp for newsletters and Google Forums for conversations</li>
 											<li>Scripted and produced video and page designs, including a 2010 PayPal X Innovate Challenge Finalist video</li>
 											<li>Wrote the Service API PRD</li>
-											<li>Supported site owners for setup and installation issues</li>
 										</ul>
 									</div>
 
-									<div class="job">
+									<div class="job displayOnly">
 										<h2>BriteSpring Consulting</h2>
 										<h3>Principal</h3>
-										<h4>2002-2005, 2007-2009</h4>
+										<h4>Bay Area, CA, 2002-2005, 2007-2009</h4>
 										<p class="minor">Assignments included:</p>
 										<ul class="minor">
 											<li>Website development using Ruby on Rails, JavaScript, CSS, and Postgres</li>
@@ -184,19 +175,19 @@
 									<div class="job">
 										<h2>Aptana</h2>
 										<h3>Manager, Customer Success</h3>
-										<h4>2008-2009</h4>
+										<h4>San Mateo, CA, 2008-2009</h4>
 										<ul>
 											<li>Wrote product documentation for Aptana Studio, Studio plugins and Aptana Cloud (using MediaWiki) and Aptana Jaxer</li>
 											<li>Developed JavaScript/Jaxer-based custom publishing software for Jaxer and Cloud documentation</li>
 											<li>Managed customer support (using Atlassian Jira and the Aptana Forums)</li>
-											<li>Redeveloped the Aptana Forums in phpBB3 with authentication integration to the Aptana ID system, including migration from earlier version of phpBB</li>
+											<li>Redeveloped the Aptana Forums in phpBB3 integrating the Aptana ID system for authentication</li>
 										</ul>
 									</div>
 
 									<div class="job">
 										<h2>Marketo</h2>
 										<h3>Manager, Community and Content</h3>
-										<h4>2007-2008</h4>
+										<h4>San Mateo, CA, 2007-2008</h4>
 										<ul class="minor">
 											<li>Built a complex publishing system to ensure customer adoption and success in PHP, JavaScript, jQuery and CSS based off SMF</li>
 											<li>Delivered first line customer care and sign-on training</li>
@@ -207,10 +198,9 @@
 									<div class="job">
 										<h2>RawSugar</h2>
 										<h3>Senior Manager, Customer Experience</h3>
-										<h4>2005-2007</h4>
-										<p>RawSugar (Palo Alto; Haifa, Israel) built an innovative tag-based consumer search service.</p>
+										<h4>Palo Alto, CA, 2005-2007</h4>
 										<ul class="bord minor">
-											<li>Provided technical support and customer training</li>
+											<li>Provided technical support and customer training as the only customer-facing staffer</li>
 											<li>Developed RawSugar plugins and tools for WordPress, MovableType and Blogger</li>
 											<li>Wrote all website text including company blog, online help and forums</li>
 											<li>Maintained online community software (blog and forums)</li>
@@ -220,7 +210,7 @@
 									<div class="job">
 										<h2>Sun Microsystems</h2>
 										<h3>Product Manager, iPlanet Application Servers</h3>
-										<h4>1999-2001</h4>
+										<h4>San Jose, CA, 1999-2001</h4>
 										<ul class="minor">
 											<li>Managed the definition and delivery of iAS 6.0 and follow-on service packs as well as several customer beta programs, Netscape 4.0 and NetDynamics 5.0.2 and follow-on service packs plus the iAS Migration Toolbox</li>
 											<li>Worked with product marketing to prepare whitepapers, data sheets and other collateral</li>
@@ -228,15 +218,9 @@
 											<li>Collaborated with professional services, support, and education groups to create complete customer solutions</li>
 											<li>Presented frequently to customers, sales team and executive management</li>
 										</ul>
-									</div>
-
-									<div class="job">
-										<h2>Sun Microsystems</h2>
 										<h3>Technical Support Manager, NetDynamics Application Server</h3>
-										<h4>1998-1999</h4>
 										<ul class="minor">
-											<li>Managed the NetDynamics support delivery team--up to 11 support engineers, three escalation engineers, and a premier accounts manager</li>
-											<li>Handled average monthly team caseload of 550 calls and 25 escalations</li>
+											<li>Managed the NetDynamics support delivery team--up to 11 support engineers, three escalation engineers, and a premier accounts manager--which handled an average monthly caseload of 550 calls and 25 escalations</li>
 											<li>Reduced average time to close by 33%, from 5.25 days to 3.5 days</li>
 											<li>Recruited and trained six support engineers and one escalation manager, promoted four interns to staff</li>
 										</ul>
@@ -245,7 +229,7 @@
 									<div class="job">
 										<h2>NetDynamics <span class="minor">(acquired by Sun Microsystems)</span></h2>
 										<h3>Technical Writer/Escalation Manager, NetDynamics Application Server</h3>
-										<h4>1997-1998</h4>
+										<h4>Menlo Park, CA, 1997-1998</h4>
 										<ul class="minor">
 											<li>Redeveloped the NetDynamics support website with significant additional material including a monthly newsletter and technical articles</li>
 											<li>Authored two volumes of the NetDynamics 4.0 product documentation while on loan to the Engineering staff</li>
@@ -255,34 +239,12 @@
 								</div><!--// .yui-u -->
 							</div><!--// .yui-gf -->
 
-							<div class="yui-gf" id="service">
-								<div class="yui-u first"><h2>Community Service</h2></div><!--// .yui-u -->
-								<div class="yui-u">
-									<div class="job">
-										<h2>Mountain Gate Homeowners Association</h2>
-										<h3>Board Member, President</h3>
-										<h4>2017-present</h4>
-									</div>
-									<div class="job">
-										<h2><a href="http://hackerdojo.com">Hacker Dojo</a>, Silicon Valley's Tech Hub</h2>
-										<h3>Treasurer</h3>
-										<h4>2014-2016</h4>
-									</div>
-									<div class="job last">
-										<h2>Jewish High Tech Community</h2>
-										<h3>Web Developer (2006 - 2014)</h3>
-										<h3>President (2006 - 2010)</h3>
-										<h4>2006-2014</h4>
-									</div>
-								</div>
-							</div>
-
 							<div class="yui-gf last" id="education">
 								<div class="yui-u first">
 									<h2>Education</h2>
 								</div>
 								<div class="yui-u">
-									<div class="job">
+									<div class="job printOnlyBottom">
 										<h2>Rutgers Graduate School of Management, Newark, NJ</h2>
 										<p class="enlarge">Master of Business Administration - Concentration in Finance</p>
 									</div>
@@ -296,12 +258,6 @@
 						</div><!--// .yui-b -->
 					</div><!--// yui-main -->
 				</div><!--// bd -->
-
-				<div id="ft">
-					<p>
-						William Lazar &mdash; <a href="http://www.billsaysthis.com/content/contact.phtml?sub=Resume" onclick="changeRef(); return false;">Email</a>
-					</p>
-				</div><!--// footer -->
 			</div><!-- // inner -->
 		</div><!--// doc -->
 	</body>
