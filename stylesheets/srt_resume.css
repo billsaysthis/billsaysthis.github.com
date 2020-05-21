@@ -148,14 +148,18 @@ a.emailer {
   float: left;
   background: #666;
   color: white;
-  padding: 6px 12px 6px 12px;
-  margin-bottom: 6px;
+  padding: 4px 12px;
+  margin-bottom: 8px;
   text-decoration: none;
 }
 a.emailer:hover {
   background: #222;
 }
 
+#location {
+  width: 100%;
+  text-align: right;
+}
 /*.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #bfd2e1; }*/
 .job {
   position: relative;
