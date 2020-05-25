@@ -21,6 +21,11 @@
 #contact {
   width: 100%;
 }
+.contact-info h3.printOnly {
+  float: none;
+  text-align: right;
+}
+
 .yui-gf .yui-u,
 .yui-gf div.first {
   float: none;
